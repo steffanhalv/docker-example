@@ -1,0 +1,26 @@
+create a Docker file cointaining the docker config
+create a .dockerignore file where dependencies will be fetched automatically
+build using
+
+```
+##build
+docker build -t company/appname
+
+##list
+docker images
+
+##run
+docker run -pd 3333:8080 company/appname
+
+##now open browser localhost:3333 to see port 8080 from docker
+
+##list all running docker containers with ids
+docker ps
+
+##get logs from specific container
+docker logs <container id>
+
+##get into container
+docker exec -it <container id> /bin/bash
+
+```
