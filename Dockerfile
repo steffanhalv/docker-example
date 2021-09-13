@@ -18,4 +18,4 @@ RUN npm install
 COPY . .
 
 EXPOSE $PORT
-CMD [ "YY=ok node", "server.js" ]
+CMD [ "YY=ok node", "yalla.js" ]
