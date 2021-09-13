@@ -24,4 +24,8 @@ docker logs <container id>
 ##get into container
 docker exec -it <container id> /bin/bash
 
+##change heroku to use container instead of ubuntu
+heroku login
+heroku stack:set container --app HEROKU_APP_NAME
+
 ```
