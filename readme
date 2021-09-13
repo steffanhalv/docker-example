@@ -1,5 +1,6 @@
 create a Docker file cointaining the docker config
 create a .dockerignore file where dependencies will be fetched automatically
+
 build using
 
 ```
