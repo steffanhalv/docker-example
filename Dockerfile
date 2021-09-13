@@ -1,5 +1,7 @@
 FROM node:14
 
+ENV DEMOS = "Yarn"
+
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -11,8 +13,6 @@ COPY package*.json ./
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
-
-ENV DEMO = "Yarn"
 
 # Bundle app source
 COPY . .

@@ -5,7 +5,7 @@
 	"author": "Steffan <steffanhalv@gmail.com>",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "TST=yay node server.js"
 	},
 	"dependencies": {
 		"express": "^4.16.1"
