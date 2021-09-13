@@ -15,8 +15,8 @@ build:
   #command:
     #- ./deployment-tasks.sh
   #image: worker
-run:
-  web: bundle exec node yalla.js
+#run:
+  #web: bundle exec node yalla.js
   #worker: python myworker.py
   #asset-syncer:
     #command:
