@@ -7,7 +7,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World - env ' + process.env.YY + ' - ' + process.env.DEMOS + ' - ' + process.env.DEMOST + ' - ' + process.env.TST);
+  res.send('Hello World - env ' + process.env.DEMO);
 });
 
 console.log(process.env)

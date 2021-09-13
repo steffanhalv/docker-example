@@ -3,10 +3,8 @@
 	"version": "1.0.0",
 	"description": "Node on docker",
 	"author": "Steffan <steffanhalv@gmail.com>",
-	"main": "server.js",
-	"scripts": {
-		"start_old": "TST=yay node server.js"
-	},
+	"main": "hello.js",
+	"scripts": {},
 	"dependencies": {
 		"express": "^4.16.1"
 	}

@@ -1,6 +1,6 @@
 FROM node:14
 
-ENV DEMOS = "Yarn"
+ENV DEMO "hello"
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -18,5 +18,4 @@ RUN npm install
 COPY . .
 
 EXPOSE $PORT
-#CMD [ "YY=ok node", "yalla.js" ]
-CMD [ "node", "yalla.js" ]
+CMD [ "node", "hello.js" ]
