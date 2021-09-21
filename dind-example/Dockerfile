@@ -1,5 +1,6 @@
 FROM docker:dind
 
+#VOLUME /var/run/docker.sock:/var/run/docker.sock
 WORKDIR /usr/src/app
 COPY src /usr/src/app
 
