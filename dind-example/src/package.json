@@ -1,0 +1,11 @@
+{
+	"name": "docker_app",
+	"version": "1.0.0",
+	"description": "Node on docker",
+	"author": "Steffan <steffanhalv@gmail.com>",
+	"main": "hello.js",
+	"scripts": {},
+	"dependencies": {
+		"express": "^4.16.1"
+	}
+}

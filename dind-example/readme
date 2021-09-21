@@ -11,7 +11,7 @@ docker build -t company/appname .
 docker images
 
 ##run
-docker run -dp 2000:3000 company/appname
+docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -dp 2000:3000 company/appname
 
 ##now open browser localhost:3333 to see port 8080 from docker
 

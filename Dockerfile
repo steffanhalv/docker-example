@@ -1,9 +1,15 @@
-FROM docker:dind
+FROM node:14
+
+ENV DEMO "ENV"
 
 WORKDIR /usr/src/app
-COPY src /usr/src/app
+COPY package*.json ./
+
+RUN npm install
+
+# Bundle app source
+COPY . .
 
 ENV PORT 3000
 EXPOSE $PORT
-
-CMD docker build -t example/test . & sleep 10s; docker run -dp $PORT:3333 example/test
+CMD [ "node", "server.js" ]
