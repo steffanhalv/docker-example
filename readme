@@ -5,13 +5,13 @@ build using
 
 ```
 ##build
-docker build -t company/appname
+docker build -t company/appname .
 
 ##list
 docker images
 
 ##run
-docker run -pd 3333:8080 company/appname
+docker run -dp 3333:8080 company/appname
 
 ##now open browser localhost:3333 to see port 8080 from docker
 
@@ -28,4 +28,6 @@ docker exec -it <container id> /bin/bash
 heroku login
 heroku stack:set container --app HEROKU_APP_NAME
 
+##dind
+docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -dp 2000:3000 company/appname
 ```

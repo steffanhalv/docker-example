@@ -1,21 +1,9 @@
-FROM node:14
+FROM docker:dind
 
-ENV DEMO "hello"
-
-# Create app directory
 WORKDIR /usr/src/app
+COPY src /usr/src/app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
-
-# Bundle app source
-COPY . .
-
+ENV PORT 3000
 EXPOSE $PORT
-CMD [ "node", "hello.js" ]
+
+CMD docker build -t example/test . & sleep 10s; docker run -dp $PORT:3333 example/test
